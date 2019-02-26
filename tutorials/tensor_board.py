@@ -13,3 +13,9 @@ with tf.Session() as sess:
     writer = tf.summary.FileWriter("output", sess.graph)
     print(sess.run(h))
     writer.close()
+
+    
+# Bash command:
+# tensorboard --logdir=data/ --host localhost --port 0
+# port 0: find open port
+# launch in browser the returned address
